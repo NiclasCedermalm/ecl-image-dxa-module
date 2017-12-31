@@ -1,7 +1,7 @@
 ECL Image DXA Module
 ======================
 
-This is a simple module to render ECL images in DXA in a generic way. By default in DXA you need to bind each ECL schema to a semantic class. This module allows you to define your ECL types in your configuration instead.
+This is a simple module to render ECL images in DXA in a generic way. By default in DXA you need to bind each ECL schema to a semantic class. This module allows you to define your ECL types in your configuration instead. The module works with both local ECL images (published to the site) and referred by an URL/template fragment (pointing to an image in a CDN location).
 
 Prerequisites
 ----------------
