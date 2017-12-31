@@ -1,0 +1,17 @@
+.classpath
+.project
+.checkstyle
+*.iml
+.idea
+.settings/
+target/
+obj
+bin
+*.user
+*.suo
+packages/
+_references
+TestResults
+.vs/
+*.DotSettings
+
