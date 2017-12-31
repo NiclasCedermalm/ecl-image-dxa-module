@@ -1,7 +1,7 @@
 ECL Image DXA Module
 ======================
 
-This is a simple module to render ECL images in DXA in a generic way. By default in DXA you need to bind each ECL schema to a semantic class. This module allows you to define your ECL types in configuration instead.
+This is a simple module to render ECL images in DXA in a generic way. By default in DXA you need to bind each ECL schema to a semantic class. This module allows you to define your ECL types in your configuration instead.
 
 Prerequisites
 ----------------
@@ -20,9 +20,9 @@ DXA.NET:
 
 Add the following to the 'appSettings-section in your Web.config:
 ```
-	<add key="ecl-image-types" value="[ECL types separated by comma, e.g. Bynder,MediaBeacon]"/>
-	<add key="ecl-image-use-template-fragment" value="[Enable ECL template fragments (true/false)]"/>
-	<add key="ecl-image-generate-responsive-images" value="[Use DXA responsive images (true/false)]"/>
+  <add key="ecl-image-types" value="[ECL types separated by comma, e.g. Bynder,MediaBeacon]"/>
+  <add key="ecl-image-use-template-fragment" value="[Enable ECL template fragments (true/false)]"/>
+  <add key="ecl-image-generate-responsive-images" value="[Use DXA responsive images (true/false)]"/>
 ```
 
 DXA.Java:
