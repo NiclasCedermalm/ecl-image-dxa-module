@@ -92,6 +92,10 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sdl.Web.Common, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sdl.Dxa.Framework.Web8.1.7.0\lib\net452\Sdl.Web.Common.dll</HintPath>
       <Private>True</Private>
@@ -238,10 +242,10 @@
   </Target>
   <PropertyGroup>
     <PostBuildEvent>REM Deploy build artifacts to DXA Site (on development machines with DXA_SITE_DIR environment variable set)
-if defined DXA_SITE_DIR (
-xcopy "$(TargetDir)Sdl.Web.Modules.ECL*.*" "%25DXA_SITE_DIR%25\bin" /Y
-xcopy "$(ProjectDir)Areas" "%25DXA_SITE_DIR%25\Areas" /S /I /Y
-)</PostBuildEvent>
+REM if defined DXA_SITE_DIR (
+REM xcopy "$(TargetDir)Sdl.Web.Modules.ECL*.*" "%25DXA_SITE_DIR%25\bin" /Y
+REM xcopy "$(ProjectDir)Areas" "%25DXA_SITE_DIR%25\Areas" /S /I /Y
+REM )</PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\Sdl.Dxa.Framework.Web8.1.7.0\build\net452\Sdl.Dxa.Framework.Web8.targets" Condition="Exists('..\packages\Sdl.Dxa.Framework.Web8.1.7.0\build\net452\Sdl.Dxa.Framework.Web8.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
