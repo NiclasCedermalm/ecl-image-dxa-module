@@ -6,7 +6,7 @@ This is a simple module to render ECL images in DXA in a generic way. By default
 Prerequisites
 ----------------
 
-The module has been developed using DXA 1.7 and the DXA white label design. DXA 1.8 can be used as well where the pom.xml/package.config needs to be updated to use 1.8 instead of 1.7. Other designs can be used as well, you might need to adjust the HTML generate method in the ECLImage class to fit your design (handling of responsive images etc).
+The module has been developed using DXA.Java 1.7 & DXA.NET 2.1 and the DXA white label design. DXA.Java 1.8 can be used as well where the pom.xml/package.config needs to be updated to use 1.8 instead of 1.7. Other designs can be used as well, you might need to adjust the HTML generate method in the ECLImage class to fit your design (handling of responsive images etc).
 
 Setup
 -------
