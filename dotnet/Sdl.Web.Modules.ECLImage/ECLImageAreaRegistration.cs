@@ -30,9 +30,12 @@ namespace Sdl.Web.Modules.ECLImage
             {
                 foreach (var eclImageType in eclImageTypes.Split(new char[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries))
                 {
+                    Sdl.Web.Common.Logging.Log.Info("Defining image type: " + eclImageType);
                     EclImage.BuildAndRegisterSubType(eclImageType.ToLower());
                 }
             }
+            RegisterViewModel("Image", typeof(EclImage));
+
             EclImage.Configure(WebConfigurationManager.AppSettings);
         }
 
